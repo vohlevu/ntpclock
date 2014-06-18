@@ -7,14 +7,56 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
+    
+    <RadioGroup
+        android:id="@+id/clockType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+ 
+        <RadioButton
+            android:id="@+id/radioDigital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/digital_clock" 
+            android:checked="true" />
+ 
+        <RadioButton
+            android:id="@+id/radioAnalog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/analog_clock" />
+ 
+    </RadioGroup>
 
+    <LinearLayout android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:orientation="horizontal"
+	        android:id="@+id/clock">
+
+	</LinearLayout>
     <TextView
-        android:id="@+id/digitalclock"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-         android:textColor="@color/text"
-         android:gravity="center"
-         android:textSize="35sp" 
-        android:text="@string/hello_world" />
+        android:id="@+id/count_down_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="70dip"
+        android:textColor="@color/text"
+        android:textSize="15sp"/>
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/btnSync"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@layout/defaultbutton"
+        android:textColor="@color/btn_text"
+        android:text="@string/sync_time" />
+
+</RelativeLayout >

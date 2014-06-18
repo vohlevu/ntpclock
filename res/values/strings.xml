@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">NTPClockApp</string>
+    <string name="app_name">NTP Clock App</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="sync_time">Sync Time</string>
+    <string name="analog_clock">Analog Clock</string>
+    <string name="digital_clock">Digital Clock</string>
+    <string name="time_update_successful">Time update successful !</string>
+    <string name="time_update_fail">Time update fail !</string>
+    <string name="count_down_text">Time update in %s</string>
+    <string name="no_connection">No connection available !</string>
 
 </resources>

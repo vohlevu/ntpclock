@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+     <color name="pressed">#55429A</color>
+     <color name="normal">#29416B</color>
      <color name="text">#FF0000</color>
+     <color name="btn_text">#FFFFFF</color>
 </resources>
